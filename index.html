@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>List To String</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-attributes">
+            <label for="sperator">Seperator</label>
+            <input type="text" id="sperator">
+        </div>
+        <div class="input-attributes">
+            <label for="eachEnclosure">Each Enclosure</label>
+            <select type="text" id="eachEnclosure">
+                <option value="none">--none--</option>
+                <option value="single">Single Invited Comma</option>
+                <option value="double">Double Invited Comma</option>
+                <option value="()">Brackets ()</option>
+                <option value="[]">Brackets []</option>
+                <option value="{}">Brackets {}</option>
+            </select>
+        </div>
+        <div class="input-attributes">
+            <label for="wholeEnclosure">Whole Enclosure</label>
+            <select type="text" id="wholeEnclosure">
+                <option value="none">--none--</option>
+                <option value="single">Single Invited Comma</option>
+                <option value="double">Double Invited Comma</option>
+                <option value="()">Brackets ()</option>
+                <option value="[]">Brackets []</option>
+                <option value="{}">Brackets {}</option>
+            </select>
+        </div>
+        <div class="input-attributes">
+            <br>
+            <label for="list">List:</label>
+            <input type="radio" id="list" value="list" name="type" checked>
+            <label for="set">Set:</label>
+            <input type="radio" id="set" value="set" name="type">
+        </div>
+        <div class="input-attributes">
+            <br>
+            <button class="btn" onclick="convert()">Convert</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-output-divs">
+            <label for="input">Enter Your List Here</label>
+            <textarea name="input" id="input" rows="10"></textarea>
+        </div>
+        <div class="input-output-divs">
+            <label for="output">Output(String Joined):</label>
+            <textarea name="output" id="output" rows="10"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
