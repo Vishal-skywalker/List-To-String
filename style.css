@@ -40,3 +40,7 @@ button.btn:hover {
 input[type=radio]{
     width: 45%;
 }
+h1{
+    text-align: center;
+    color: rgba(9, 80, 180, 0.658);
+}
