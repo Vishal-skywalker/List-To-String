@@ -1,13 +1,8 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-label {
+/* label {
     font-size: 18px;
-}
+} */
 
-textarea, input, select, .btn{
+/* textarea, input, select, .btn{
     width: 100%;
     font-size: 20px;
     padding: 15px;
@@ -15,39 +10,44 @@ textarea, input, select, .btn{
     display: inline-block;
     border: none;
     background: #f1f1f1;
-}
+} */
 
-.container {
+/* .container {
     display: flex;
-}
+} */
 
-.input-output-divs {
+/* .input-output-divs {
     margin: 2rem;
     width: 45%;
-}
+} */
 .input-attributes{
     margin: 2rem;
     width: auto;
 }
-button.btn {
+/* button.btn {
     border-radius: 5px;
     background-color: rgba(19, 177, 19, 0.388);
     cursor: pointer;
-}
-button.btn:hover {
+} */
+/* button.btn:hover {
     background-color: rgba(19, 177, 19, 0.601);
-}
-input[type=radio]{
-    width: 45%;
-}
+} */
+/* input[type=radio]{
+    width: 50%;
+    padding: 20px;
+} */
 h1{
     text-align: center;
     color: rgba(9, 80, 180, 0.658);
 }
 .watermark {
     opacity: 0.5;
-    color: BLACK;
+    color: rgb(207, 207, 207);
     position: fixed;
     top: auto;
-    left: 80%;
+    left: 85%;
+}
+textarea{
+    height: 15rem !important;
+    resize: none !important;
 }
