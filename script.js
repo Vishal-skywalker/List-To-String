@@ -4,13 +4,18 @@ function convert(){
     const eachEnclosure = document.getElementById('eachEnclosure');
     const input = document.getElementById('input');
     const output = document.getElementById('output');
+    const split = document.getElementById('split');
     let type = '';
+    const regexMap = {
+        "all":/\s/,
+        "line":/\n/
+    };
     document.getElementsByName('type').forEach(el => {
         if (el.checked) {
             type = el.value;
         }
     });
-    const regex = new RegExp(/\s/, 'ig');
+    const regex = new RegExp(regexMap[split.value], 'ig');
     let data = input.value;
     data = data.split(regex).filter(function(el) {
         if(!el.match(regex)){

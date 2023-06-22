@@ -14,11 +14,12 @@
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="icons8-done-100.png" type="image/x-icon">
+    <script src="script.js" defer></script>
     <title>List To String</title>
 </head>
 
 <body >
-    <h1>List To String Converter</h1>
+    <h1 class="my-5">List To String Converter</h1>
     <div class="container-fluid input-group justify-content-evenly">
         <div class="input-attributes">
             <label for="sperator" class="form-label">Seperator</label>
@@ -46,23 +47,24 @@
                 <option value="{}">Brackets {}</option>
             </select>
         </div>
-        <div class="input-attributes d-flex mt-5" >
-            <!-- <br> -->
-            <div class="form-check px-4 mt-4">
-                <label for="list" class="form-check-label">List:</label>
-                <input type="radio" id="list" value="list" name="type" checked class="form-check-input" >
-            </div>
-            <!-- <br> -->
-            <div class="form-check px-4 mt-4">
-                <label for="set" class="form-check-label">Set:</label>
-                <input type="radio" id="set" value="set" class="form-check-input" name="type" >
-            </div>
+        <div class="input-attributes">
+            <label for="split" class="form-label">Split With</label>
+            <select type="text" id="split" class="form-select">
+                <option value="all">All</option>
+                <option value="line">Line</option>
+            </select>
+        </div>
+        <div class="input-attributes form-check mt-5 h-75 btn-group">
+            <input type="radio" id="list" value="list" name="type" checked class="btn-check" autocomplete="off">
+            <label for="list" class="btn btn-outline-primary">List</label>
+            <input type="radio" id="set" value="set" class="btn-check" name="type" autocomplete="off">
+            <label for="set" class="btn btn-outline-primary">Set</label>
         </div>
         <div class="input-attributes mt-5">
-            <button class="btn btn-success mt-3" onclick="convert()">Convert</button>
+            <button class="btn btn-success w-100" onclick="convert()">Convert</button>
         </div>
     </div>
-    <div class="input-group px-5">
+    <div class="input-group px-5 mt-5">
         <div class="input-output-divs form-floating mx-3">
             <textarea name="input" id="input" class="form-control"></textarea>
             <label for="input">Enter Your List Here</label>
@@ -75,7 +77,6 @@
     <div class="watermark my-3">
         By:- Vishal Das
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>
